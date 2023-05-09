@@ -227,13 +227,12 @@ ul {
 }
 
 .dark-bg {
-  max-width: 1440рх;
-  background: var(--color-navy-blue);
+  max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.png);
+    url(../images/img-name.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -455,7 +454,8 @@ p {
   list-style: none;
 }
 .team {
-  padding: 32px 16px;
+  padding: 32px 0;
+
   text-align: center;
 }
 .color-tt {
@@ -522,8 +522,19 @@ p {
   gap: 24px;
 }
 .social-link {
-  color: var(--color-iris);
-  fill: #404bbf;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-iris);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a:hover {
+  background-color: #404bbf;
+}
+a:focus {
+  background-color: #404bbf;
 }
 .what-we {
   width: 264px;
@@ -547,4 +558,82 @@ p {
   right: 0%;
   top: 0%;
   bottom: 0%;
+}
+.footer-icon {
+  width: 96px;
+  height: 24px;
+  left: 540px;
+  top: 2988px;
+}
+.icon-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.02em;
+
+  /* WHITE */
+
+  color: #ffffff;
+}
+.icon-what-we {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.social-items {
+  width: 40px;
+  height: 40px;
+}
+.social-icon {
+  fill: var(--color-cloud);
+}
+.cust-sect {
+  padding-top: 120px;
+}
+.text-style-cust {
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--color-grey);
+  margin-bottom: 72px;
+  text-align: center;
+}
+.ul-cust {
+  display: flex;
+  gap: 24px;
+}
+.li-cust {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+.cust-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-light-slate);
+}
+..cust-link:hover {
+  color: #404bbf;
+  border-color: #404bbf;
+}
+.parent {
+  fill: currentColor;
+}
+.foot {
+  display: flex;
+  align-items: baseline;
+}
+.foot-logo {
+  margin-right: 120px;
 }
