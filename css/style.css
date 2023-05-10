@@ -227,6 +227,7 @@ ul {
 }
 
 .dark-bg {
+  max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -292,6 +293,7 @@ ul {
   color: var(--color-cloud);
 }
 .button-all {
+  display: block;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -357,12 +359,16 @@ ul {
   background-color: var(--color-ocean);
 }
 .button-all:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border: 1px solid var(--color-cornflower);
   border: 1px solid transparent;
   color: var(--color-white);
   background-color: #404bbf;
 }
 .button-all:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border: 1px solid var(--color-cornflower);
   border: 1px solid transparent;
   color: var(--color-white);
@@ -664,4 +670,21 @@ p {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+.social-foto {
+  justify-content: center;
+  gap: 24px;
+  display: flex;
+}
+.social-link:hover {
+  background-color: #404bbf;
+}
+.social-link:focus {
+  background-color: #404bbf;
+}
+.s-link:hover {
+  background-color: #31d0aa;
+}
+.s-link:focus {
+  background-color: #31d0aa;
 }
